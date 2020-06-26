@@ -29,8 +29,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void suma(View view) {
+        String resultadoSuma;
+        Operacion operacion = new Operacion();
+        resultadoSuma = operacion.suma(numero1.getText().toString(), numero2.getText().toString());
+        resultado.setText(resultadoSuma);
     }
 
     public void resta(View view) {
+        String resultadoSuma;
+        Operacion operacion = new Operacion();
+        resultadoSuma = operacion.resta(numero1.getText().toString(), numero2.getText().toString());
+        resultado.setText(resultadoSuma);
     }
 }
